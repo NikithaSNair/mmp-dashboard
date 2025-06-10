@@ -1,6 +1,6 @@
 .dashboard {
   min-height: 100vh;
-  background-color: #ffffff;
+   background: linear-gradient(135deg,#33194d 0%,#0f4323 100%);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
 }
 

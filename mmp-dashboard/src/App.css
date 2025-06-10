@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 .site-container {
-  width: calc(100vwh-1216px);
+  width: calc(100vw-1216px);
   height: 1894.19px;
-  background: #fff;
+
   overflow: hidden;
   box-sizing: border-box;
   margin-top: 20px;
@@ -20,7 +20,6 @@
 .dashboard-panel {
   width: 1200px; 
   min-height: 90vh;
-  background: #23272f; 
   border-radius: 20px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.25);
   display: flex;
@@ -35,13 +34,23 @@ body::before {
   left: -200px;
   width: 200%;
   height: 200%;
-  background:
-    radial-gradient(circle at top left, #6e23b5, transparent 100%),
-    radial-gradient(circle at bottom right, #12362f, transparent 50%);
+  background: linear-gradient(135deg,#33194d 0%,#0f4323 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
   z-index: -1;
   filter: blur(180px);
   opacity: 0.4;
   pointer-events: none;
+  min-height: 100vh;
+}
+body {
+  background: linear-gradient(135deg, #a97bd7 0%, #179b4a 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 button {

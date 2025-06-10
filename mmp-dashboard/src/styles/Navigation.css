@@ -1,5 +1,5 @@
 .navigation {
-  background: white;
+  background: linear-gradient(135deg,#33194d 0%,#0f4323 100%);
   border-bottom: 1px solid #e1e5e9;
   overflow-x: auto;
 }

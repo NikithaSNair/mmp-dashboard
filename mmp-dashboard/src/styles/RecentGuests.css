@@ -1,7 +1,7 @@
 .recent-guests {
-  background: rgb(255, 255, 255);
   border-radius: 12px;
-  padding: 24px;
+  padding: 24px; 
+  background: linear-gradient(135deg,#33194d 0%,#0f4323 100%);
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
