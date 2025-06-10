@@ -50,7 +50,8 @@
   border: 1px solid #e2e8f0;
   border-radius: 6px;
   font-size: 14px;
-  background: white;
+  background: linear-gradient(135deg,#33194d 0%,#0f4323 100%);
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -126,7 +127,7 @@
 
 .guest-status.reviewed-shortlisted {
   background: #fef3c7;
-  color: #8b5e41;
+  color: #ffffff;
 }
 
 .guest-time {
@@ -171,7 +172,7 @@
 .guest-list-title {
   font-size: 22px;
   font-weight: 700;
-  color: #000000;
+  color: #ffffff;
   margin: 0;
 }
 
