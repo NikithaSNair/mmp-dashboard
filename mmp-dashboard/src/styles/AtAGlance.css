@@ -135,6 +135,7 @@ color: #20ad70;
 display: flex;
 gap: 16px;
 flex-wrap: wrap;
+background: linear-gradient(135deg,#33194d 0%,#0f4323 100%);
 justify-content: space-between;
 margin-top: 20px;
 }
@@ -143,7 +144,7 @@ margin-top: 20px;
 min-width: 50px;
 border-radius: 10px;
 border: 1px solid #dadce0;
-background: rgb(226, 224, 224);
+background: rgba(226, 224, 224, 0);
 cursor: pointer;
 color: black;
 font-weight: 600;
@@ -164,7 +165,7 @@ color: #667eea;
 }
 
 .action-btn.dropped:hover {
-border-color: #d4d3d3;
+border-color: #171616;
 color: #000000;
 }
 
