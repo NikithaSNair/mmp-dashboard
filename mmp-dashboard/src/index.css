@@ -10,7 +10,7 @@
   min-width: 100vw;
   margin: 0;
   padding: 0;
-  /* Horizontal linear gradient with three sections */
+ 
   background: linear-gradient(
     to right,
     #858fa4 0%,         
@@ -37,6 +37,7 @@ a:hover {
 }
 
 body {
+  background: linear-gradient(135deg,#33194d 0%,#0f4323 100%);
   margin: 0;
   place-items: center;
   min-width: 320px;
