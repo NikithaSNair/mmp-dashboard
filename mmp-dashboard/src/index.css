@@ -31,8 +31,10 @@
 }
 
 .site-container {
-  width: calc(100vw - 1216px); /* fixed typo */
-  height: 1894.19px;
+  width: 80vw; 
+  min-width: 400x;
+  max-width: 1600px;
+  margin: 40px auto 0 auto;
   overflow: hidden;
   box-sizing: border-box;
   margin-top: 20px;
@@ -124,7 +126,7 @@ h1 {
 
 
 body {
-  background: linear-gradient(135deg, #a97bd7 0%, #179b4a 100%);
+  background: linear-gradient(135deg, #311d46 0%, #0b311a 100%);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;

@@ -3,23 +3,36 @@
   padding: 0;
   box-sizing: border-box;
 }
-.site-container {
-  width: calc(100vw-1216px);
-  height: 1894.19px;
 
-  overflow: hidden;
-  box-sizing: border-box;
-  margin-top: 20px;
+body {
+  background: linear-gradient(135deg, #301a45 0%, #179b4a 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.site-container {
+  width: 90vw;             /* Responsive width */
+  max-width: 1600px;       /* Set your preferred max width */
+  min-width: 500px;        /* Prevent too narrow */
+  margin: 40px auto 0 auto;
   box-shadow: 0 8px 32px rgba(0,0,0,0.25);
   border-radius: 20px;
   display: flex;
-  max-width: 1916px;
-  min-width: 500px;
   flex-direction: column;
+  background: #fff;        /* Optional: card look */
 }
+
 .dashboard-panel {
-  width: 1200px; 
+  width: 100%; 
   min-height: 90vh;
+  max-width: 1200px;      
+  margin: 0 auto;
   border-radius: 20px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.25);
   display: flex;
@@ -27,6 +40,7 @@
   position: relative;
   overflow: hidden;
 }
+
 body::before {
   content: "";
   position: fixed;
@@ -34,7 +48,7 @@ body::before {
   left: -200px;
   width: 200%;
   height: 200%;
-  background: linear-gradient(135deg,#33194d 0%,#0f4323 100%);
+  background: linear-gradient(135deg,#200f31 0%,#13301e 100%);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -43,20 +57,53 @@ body::before {
   pointer-events: none;
   min-height: 100vh;
 }
-body {
-  background: linear-gradient(135deg, #a97bd7 0%, #179b4a 100%);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
 
 button {
   font-family: inherit;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #312f2f;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 
 input, select {
   font-family: inherit;
+}
+
+a {
+  font-weight: 500;
+  color: #e6e6e6;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #cfb3b3;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
 }
